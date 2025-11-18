@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Johanna</title>
+  <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/logo.jpeg" alt="Johanna portrait" class="header-photo">
+    <h1>Portfolio</h1>
+    <button id="nav-toggle" class="hamburger"
+            aria-label="Toggle navigation"
+            aria-controls="primary-nav"
+            aria-expanded="true">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </header>
+
+  <nav id="primary-nav" class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a href="play.html">Play</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2><span class="highlight">My Portfolio</span></h2>
+    <p>Browse through the project cards for a quick overview, and click on any project to see detailed insights and creative solutions.</p>
+
+    <section class="project card-purple">
+      <figure class="project-cover">
+        <picture>
+          <source media="(min-width: 900px)" srcset="images/portfolioimage2.jpeg">
+          <img src="images/portfolioimage2.jpeg" alt="ClientSignal EQ cover image">
+        </picture>
+      </figure>
+
+      <div class="project-body">
+        <h2 class="project-title">ClientSignal EQ</h2>
+        <a class="chip card-link" href="https://drive.google.com/file/d/1RXhzRhC5xWpecMVTV4jvkBuftW3GPtv0/view?usp=sharing">See Project</a>
+        <button id="see-more" class="chip-button open-modal-btn" type="button">See more</button>
+      </div>
+
+      <div class="card-extra">
+        <p><strong>Skills:</strong> User Research, UX Design, Information Architecture, Data Visualization, Collaboration, Presentation &amp; Storytelling</p>
+        <p>ClientSignal EQ is an AI-powered emotional intelligence coaching tool designed to help IT delivery teams monitor team sentiment, predict project risks, and receive real-time guidance for improved collaboration.</p>
+      </div>
+    </section>
+
+    <section class="project card-blue">
+      <figure class="project-cover">
+        <picture>
+          <source media="(min-width: 900px)" srcset="images/portfolioimage1.jpeg">
+          <img src="images/portfolioimage1.jpeg" alt="AiDIY cover image">
+        </picture>
+      </figure>
+
+      <div class="project-body">
+        <h2 class="project-title">AiDIY</h2>
+        <a class="chip card-link" href="https://figma.com/design/vPKRKh8YNguYPcRNgJFXQl/Ai-DIY-designs?node-id=0-1&t=zZuUXcI0pKl0xcgr-1">See Project</a>
+        <button id="see-more-aidiy" class="chip-button open-modal-btn" type="button">See more</button>
+      </div>
+
+      <div class="card-extra">
+        <p><strong>Skills:</strong> User Research, UI/UX Design, Gamification Design, Interaction Design, Prototyping, Content Strategy</p>
+        <p>AiDIY is an AI-powered life skills mentor app for kids and teens that uses a conversational avatar named Aidie to teach practical skills like money management and home tasks through interactive, voice-driven lessons.</p>
+      </div>
+    </section>
+
+    <div id="pop-up" class="modal-backdrop hidden" aria-hidden="true">
+  <dialog class="modal" aria-labelledby="modal-title">
+    <div class="modal-sheet">
+      <button id="back" class="modal-close" aria-label="Close modal">×</button>
+      <header class="modal-hero">
+        <img src="images/clients.jpeg" alt="Larger preview of ClientSignal EQ project">
+      </header>
+      <div class="modal-body">
+        <h2 id="modal-title" class="project-title">ClientSignal EQ — Preview</h2>
+        <ul class="modal-bullets">
+          <li>Tracks team sentiment &amp; flags risk</li>
+          <li>Realtime guidance for delivery teams</li>
+          <li>Dashboard with actionable trends</li>
+        </ul>
+        <div class="modal-cta">
+          <a class="chip" href="https://drive.google.com/file/d/1RXhzRhC5xWpecMVTV4jvkBuftW3GPtv0/view?usp=sharing">View full case study</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+<div id="pop-up-aidiy" class="modal-backdrop hidden" aria-hidden="true">
+  <dialog class="modal" aria-labelledby="modal-title-aidiy">
+    <div class="modal-sheet">
+      <button id="back-aidiy" class="modal-close" aria-label="Close modal">×</button>
+      <header class="modal-hero">
+        <img src="images/aidiys.jpeg" alt="Larger preview of AiDIY project">
+      </header>
+      <div class="modal-body">
+        <h2 id="modal-title-aidiy" class="project-title">AiDIY — Preview</h2>
+        <ul class="modal-bullets">
+          <li>Conversational AI mentor named Aidie</li>
+          <li>Gamified voice-based learning for ages 8–18</li>
+          <li>Focuses on real-world life skills</li>
+        </ul>
+        <div class="modal-cta">
+          <a class="chip" href="https://figma.com/design/vPKRKh8YNguYPcRNgJFXQl/Ai-DIY-designs?node-id=0-1&t=zZuUXcI0pKl0xcgr-1">View full project</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+  </main>
+
+  <footer>
+    <div class="footer-buttons">
+      <a href="index.html" class="footer-btn">Home</a>
+      <a href="portfolio.html" class="footer-btn">Portfolio</a>
+      <a href="play.html" class="footer-btn">Play</a>
+      <a href="contact.html" class="footer-btn">Contact</a>
+    </div>
+    <p>© 2025 Johanna Kim</p>
+  </footer>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/interactivity.js"></script>
+</body>
+</html>

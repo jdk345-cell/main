@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Johanna — UX & Data Enthusiast</title>
+  <link rel="stylesheet" href="styles/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/logo.jpeg" alt="Johanna portrait" class="header-photo">
+    <h1>Home</h1>
+    <button id="nav-toggle" class="hamburger"
+            aria-label="Toggle navigation"
+            aria-controls="primary-nav"
+            aria-expanded="true">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </header>
+
+<nav id="primary-nav" class="site-nav">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="play.html">Play</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro-flex">
+      <div class="intro-text">
+        <h2>Hi, I'm <span class="highlight">Johanna</span></h2>
+        <p>UX + Data enthusiast at Cornell, building intuitive, research-driven digital experiences with code, design, and curiosity.</p>
+      </div>
+      <figure class="intro-image">
+        <picture>
+          <source srcset="images/picture.JPG" media="(max-width: 899px)">
+          <img src="images/johannapic.jpeg" alt="Johanna picture">
+        </picture>
+      </figure>
+    </section>
+
+    <h2 class="highlight-label">My Services</h2>
+    <section class="services">
+      <div class="service-card pink-card"><h2>Product Design</h2></div>
+      <div class="service-card yellow-card"><h2>Product Management</h2></div>
+      <div class="service-card purple-card"><h2>Data Analysis</h2></div>
+      <div class="service-card blue-card"><h2>UI/UX Design</h2></div>
+    </section>
+
+    <h2 class="highlight-label">My Experiences</h2>
+    <section class="experiences">
+      <div class="experience-card purple-card">
+        <p class="date">June 2025 – Present</p>
+        <h3>Humanities and Digital Intern</h3>
+        <hr>
+        <p>I planned and managed four teen outreach events, handling logistics to ensure strong engagement. I also built a mobile-friendly site using HTML, CSS, and GitHub Pages to showcase teen projects, working with curators and digital staff to align content with institutional branding and user needs.</p>
+      </div>
+
+      <div class="experience-card pink-card">
+        <p class="date">Apr 2025 – Jul 2025</p>
+        <h3>AI UI/UX Designer Intern — PM Accelerator</h3>
+        <hr>
+        <p>Collaborated with PMs, engineers, and designers to build GenAI-powered MVPs. Led user research and created accessible prototypes in Figma using ChatGPT APIs.</p>
+      </div>
+
+      <div class="experience-card yellow-card">
+        <p class="date">Jan 2025 – Jun 2025</p>
+        <h3>Web3 AI Intern — Web3Names.ai</h3>
+        <hr>
+        <p>Designed Web3 marketing campaigns, analyzed blockchain data, and contributed to AI research projects improving engagement and awareness.</p>
+      </div>
+
+      <div class="experience-card blue-card">
+        <p class="date">Jan 2025 – Mar 2025</p>
+        <h3>Product Design Intern — Shades</h3>
+        <hr>
+        <p>Analyzed user interviews and app metrics to design and prototype new app features, rapidly iterating based on community feedback.</p>
+      </div>
+
+      <div class="experience-card purple-card">
+        <p class="date">Jun 2024 – Aug 2024</p>
+        <h3>Web Design Intern — Queens Professional Chiropractic Care</h3>
+        <hr>
+        <p>Redesigned the clinic’s website to improve its online presence, increasing patient interactions and satisfaction rates.</p>
+      </div>
+    </section>
+
+    <section class="about-flex">
+      <figure class="about-image">
+        <img src="images/johannapic2.jpeg" alt="Johanna picture 2">
+      </figure>
+      <div class="about-text">
+        <h2 class="highlight-label">About Me</h2>
+        <p>Hi! I’m Johanna, a designer and aspiring product thinker studying Information Science at Cornell University. I’ve worked across product, design, and research roles—building GenAI tools, analyzing user data, and creating web content for cultural institutions. I’m passionate about designing thoughtful, intuitive experiences that solve real problems.</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="credits-block">
+    <h2 id="credits-title" class="highlight-label">Credits</h2>
+    <p><strong>Images:</strong> All photos and artwork on this home page are original work by Johanna Kim.</p>
+    <p><strong>Design & Code:</strong> Original work for INFO 1300 (Fall 2025).</p>
+    <p><strong>Background image:</strong> <code>images/graph.jpg</code> — original work by Johanna Kim.</p>
+  </section>
+
+  <footer>
+    <div class="footer-buttons">
+      <a href="index.html" class="footer-btn">Home</a>
+      <a href="portfolio.html" class="footer-btn">Portfolio</a>
+      <a href="play.html" class="footer-btn">Play</a>
+      <a href="contact.html" class="footer-btn">Contact</a>
+    </div>
+    <p>© 2025 Johanna Kim</p>
+  </footer>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/interactivity.js"></script>
+</body>
+</html>
